@@ -1,0 +1,58 @@
+
+
+/* 
+    There are four types of combinators in css.
+    1. Adjecent Siblings (+)
+    2. General Siblings  (-)
+    3. Child Siblings     (>)
+    4. Decendent Siblings
+Below are the examples of all the siblings!
+
+
+    */
+
+
+
+
+
+
+
+
+/* Example of Adjacent Sibling +
+    This will color red any p tag which will come immidiately after h2 tag.
+    Note: Both tags need to be share the same Parent.
+*/
+/* 
+h2 + p {
+    color: red;
+} */
+
+
+/* Example of Genetal Sibling -
+    This will color red any p tag which will come after h2 tag.
+    Note: Both tags need to be share the same Parent.
+*/
+
+/* h2 ~ p {
+    color: red;
+} */
+
+
+/* Example of Child Siblings >
+    This will color red any p tag which is the direct child of the div.
+*/
+
+/* div > p {
+    color: red;
+} */
+
+
+/* Example of Decendent Siblings >
+    This will color red any p tag which is the child of the div.
+*/
+
+
+div p {
+    color: red;
+}
+
