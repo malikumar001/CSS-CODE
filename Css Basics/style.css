@@ -11,13 +11,6 @@ Below are the examples of all the siblings!
 
     */
 
-
-
-
-
-
-
-
 /* Example of Adjacent Sibling +
     This will color red any p tag which will come immidiately after h2 tag.
     Note: Both tags need to be share the same Parent.
@@ -51,8 +44,28 @@ h2 + p {
     This will color red any p tag which is the child of the div.
 */
 
-
+/* 
 div p {
     color: red;
+} */
+
+
+/* ========================================================================================== */
+
+/*======================== Margin Collapsing ======================================*/
+
+body{
+    margin: 0;
 }
+
+#h1 {
+    background: red;
+    width: 100%;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
 
