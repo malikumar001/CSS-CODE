@@ -1,51 +1,84 @@
-* {
-    box-sizing: border-box;
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+* {
+  box-sizing: border-box;
 }
+
+/* =======================================================
+                    Main Header
+========================================================= */
 
 .main-header {
-    background: red;
-}
-
-.main-nav__item {
-    display: inline-block;
+  background: #4caf50;
 }
 
 .main-header > div {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 22px;
-    margin-left: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 10px;
 }
 
 .main-header > div a {
-    text-decoration: none;
-    color: #0e4f1f;
+  text-decoration: none;
+  color: #0e4f1f;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 90px);
+}
+
+.main-nav__item {
+  display: inline-block;
 }
 
 .main-nav__item a {
-    text-decoration: none;
-    color: #0e4f1f;
-    margin-left: 5px;
-    font-size: 15px;
+  text-decoration: none;
+  color: #0e4f1f;
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px;
 }
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.main-nav__item--cta a {
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #ff1b68;
+  border: 1px solid #fff;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background: #fff;
+  border: 1px solid #ff1b68;
+}
+
+/* =======================================================
+                    Main Header (END)
+========================================================= */
+
 
 
 h1 {
-    color: red;
-} 
-
-.main-nav {
-    display: inline-block;    
-    text-align: right;
-    width: calc(100% - 90px);
+  color: red;
 }
 
 /* 
+
 
 .href{
     display: inline-block;
@@ -64,9 +97,6 @@ h1 {
 body {
     color: orange;
 }  */
-
-
-
 
 /* 
     There are four types of combinators in css.
@@ -88,7 +118,6 @@ h2 + p {
     color: red;
 } */
 
-
 /* Example of Genetal Sibling -
     This will color red any p tag which will come after h2 tag.
     Note: Both tags need to be share the same Parent.
@@ -98,7 +127,6 @@ h2 + p {
     color: red;
 } */
 
-
 /* Example of Child Siblings >
     This will color red any p tag which is the direct child of the div.
 */
@@ -106,7 +134,6 @@ h2 + p {
 /* div > p {
     color: red;
 } */
-
 
 /* Example of Decendent Siblings >
     This will color red any p tag which is the child of the div.
@@ -117,23 +144,15 @@ div p {
     color: red;
 } */
 
-
 /* ========================================================================================== */
 
 /*======================== Margin Collapsing ======================================*/
 
-body{
-    margin: 0;
-}
-
+/* 
 #h1 {
     background: red;
     width: 100%;
     border: 2px solid black;
     padding: 20px;
     box-sizing: border-box;
-}
-
-
-
-
+} */
